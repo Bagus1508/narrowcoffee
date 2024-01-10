@@ -1,0 +1,735 @@
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+.navbarContainer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: rgba(37, 37, 37, 0.8);
+}
+
+.nav-content {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.openButtonsidebar {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2B4A53;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin: 20px;
+    }
+
+#sidebar a:hover  {
+    background-color: #938362;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.bar-icon {
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+/* Beranda - Section 1 */
+.section1-homepage {
+    height: 100vh;
+    padding: 100px;
+    margin: 0;
+    background: linear-gradient(to bottom,  #938362 50%, white 50%);
+}
+
+.logoContainer {
+    display: flex;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.logoContainer div {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.containerHomepage-section1 {
+    margin-top: 18px;
+    display: flex;
+    gap: 50px;
+}
+
+.containerHomepage-section1 div img {
+    width: 530px;
+}
+
+.textContainer-section1 {
+    background-color: #2B4A53;
+    width: 100%;
+    height: 310px;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.textContainer-section1 div {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.textContainer-section1 h1 {
+    color: white;
+    font-size: 50px;
+    box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    border-bottom: 5px solid #D3A500;
+}
+
+.textContainer-section1 h1 span {
+    color: #D3A500;
+}
+
+.containerButtonMenu-section1 {
+    padding-top: 50px;
+}
+
+.containerButtonMenu-section1 a {
+    background-color: #2B4A53;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.containerButtonMenu-section1 a:hover {
+    background-color: #192c31;
+}
+
+/* Section 2 - Homepage */
+.section2-homepage {
+    height: 100vh;
+    margin: 0;
+}
+
+.section2-homepage .titleContainer {
+    height: 37vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(/src/img/background-section2-homepage.png), lightgray 50% / cover fixed no-repeat;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.section2-homepage .titleContainer div {
+    color: white;
+    height: 37vh;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section2-homepage .titleContainer div h1 {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    border-bottom:4px solid #D3A500 ;
+} 
+
+.section2-homepage .contactContainer {
+    background: #938362;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+}
+
+.contactContainer .addressContainer {
+    width: 100vh;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.addressContainer .mapsContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.mapsContainer .location {
+    background-color: #2B4A53;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.location iframe {
+    border-radius: 20px;
+    width: 100%;
+    height: 35vh;
+}
+
+.address {
+    background-color: #D6C3AD;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.address h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #464646;
+    margin: 0;
+}
+
+.address div {
+    font-size: 20px;
+    font-weight: 500;
+    color: #464646;
+    margin: 0;
+}
+
+.contactContainer .callContainer {
+    background-color: #D6C3AD;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100vh;
+    border-radius: 20px;
+}
+
+.callContainer .header {
+    margin: 0;
+    width: 40vh;
+    display: flex;
+
+}
+
+.callContainer .header h1 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #2B4A53;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.contactList {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactList div {
+    padding-bottom: 5px;
+    color: #464646;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Menu Page CSS */
+.section1-menupage {
+    margin: 0;
+    background-color: #C8BEB3;
+}
+
+.section1-menupage .headerContainer {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: #938362;
+}
+
+.section1-menupage .logoContainer {
+    display: flex;
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+}
+
+.section1-menupage .logoContainer div {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.titleContainer {
+    color: #382F0E;
+    justify-content: end;
+    display: flex;
+}
+
+.titleContainer .text{
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+    font-weight: 1000;
+}
+
+.titleContainer .text span {
+    font-weight: 300;
+}
+
+.menuContainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuContainer .category1 {
+    border-left: 4px solid #5D532F;
+    padding-left: 50px;
+    color: #5D532F;
+    width: 60%;
+}
+
+.contentMenuContainer .listProductContainer .productName {
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+}
+
+.contentMenuContainer .listProductContainer .productDesc {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menuContainer .imageContainer {
+    height: 50%;
+    transform: translate(100% - 50%);
+    display: flex;
+    margin-left: 0;
+}
+
+.menuContainer .imageContainer .accent {
+    background-color: #192c31;
+    width: 20px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuContainer .imageContainer img {
+    height: 100%;
+    width:65%;
+    display: flex;
+    justify-content: end;
+}
+
+.category1 .titleCategory {
+    color: #5D532F;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.listProductContainer .productName .item1 {
+    width: 250px;
+}
+
+.listProductContainer .productName .item2 {
+    width: 250px;
+}
+
+.listProductContainer .productName .item3 {
+    width: 150px;
+}
+
+.productName span button {
+    background-color: #5D532F;
+    border-radius: 50%;
+}
+
+.productName span button {
+    background: #5D532F;
+    border: none;
+}
+
+.productName span button:hover {
+    background: #857744;
+}
+
+/* Menu Minuman Section */
+#menuBody {
+    background: #C8BEB3;
+}
+
+#drinkMenuContainer {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #2B4A53;
+}
+
+#drinkImageMenu {
+    margin-left: -100px;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#drinkImageMenu img {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#category2 {
+    border-left: 4px solid white;
+    padding-left: 50px;
+    color: #FFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#category2 .titleCategory {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Menu Minuman Section - Cart Modal */
+    .cartButtonContainer {
+        display: flex;
+        justify-content: end;
+        flex: auto;
+        margin-left: auto;
+        margin-right: 100px;
+    }
+
+    .cartButton {
+        background: #2B4A53;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        gap:10px;
+        align-items: center;
+    }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #2B4A53;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #2B4A53;
+    color: white;
+  }
+
+  .modal-footer button {
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    color: #464646;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    align-items: end;
+  }
+
+/* Login Page */
+.login {
+    background-color: #938362;
+    height: 100vh;
+}
+
+.containerLogin {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#formLogin {
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#formLogin div:nth-child(1) img {
+    background-color: gray;
+    border-radius: 100%;
+    margin-bottom: 24px;
+}
+
+#formLogin div:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+#formLogin div:nth-child(2) div:nth-child(1) {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#formLogin form input {
+    background-color: #E4E4E4;
+    padding: 20px;
+    border: none;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#formLogin button {
+    background-color: blue;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border: 0;
+}
+
+#formLogin button:hover {
+    background-color: red;
+}
+
+/* Sidebar - Dashboard */
+.asideDashboard {
+    background: #938362;
+    width: 200px;
+    padding: 50px;
+    height: 100%;
+    position: fixed; /* Membuatnya tetap di tempat dan tidak terpengaruh oleh scrolling */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Tinggi 100% dari viewport height */
+}
+
+.asideDashboard .logoContainer {
+    background: #888;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navSideContainer {
+    padding-top: 80px;
+}
+
+.navSide {
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.navSide a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.navSide a:hover {
+    background-color: #916C57;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+}
+
+.contentDashboard {
+    margin-left: 270px;
+    padding: 80px;
+}
+
+.contentDashboard .header {
+    color: #916C57;
+    font-size: 54px;
+    border-bottom: 5px solid #916C57;
+    width: 100%;
+    display: inline-block;
+}
+
+.contentDashboard .card {
+    background-color: #2B4A53;
+    padding: 30px;
+    margin-top: 30px;
+    width: 30%;
+    color: white;
+    border-radius: 15px;
+}
+
+.contentDashboard .card div:nth-child(1) {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.tableContainer {
+    padding-top: 20px;
+}
+
+.tableContainer th {
+    border: 2px solid #BBB ;
+    padding: 10px;
+}
+
+.tableContainer td {
+    border: 2px solid #BBB ;
+    padding: 10px;
+}
