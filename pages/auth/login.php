@@ -24,13 +24,13 @@
                         Silahkan Masuk
                     </div>
                 </div>
-                <form>
+                <form action="loginController.php" method="post">
                     <label for="username">Username</label><br>
-                    <input type="text" id="username" placeholder="Masukan Username"><br>
+                    <input type="text" id="username" name="username" placeholder="Masukan Username"><br>
                     <label for="password">Password</label><br>
-                    <input type="password" id="password" placeholder="Masukan Password"><br>
+                    <input type="password" id="password" name="password" placeholder="Masukan Password"><br>
+                    <button type="submit">Login</button>
                 </form>
-                <button>Login</button>
             </div>
         </div>
     </section>
